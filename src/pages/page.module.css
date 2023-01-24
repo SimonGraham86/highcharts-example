@@ -1,0 +1,35 @@
+.page {
+    padding: 32px 0 0 32px;
+	background: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.pageFlex {
+    padding: 32px 0 0 32px;
+	background: #f3f3f3;
+    display:flexbox;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    flex: 31%;
+    min-width: 300px;
+    height: calc((100vh - 128px) / 3);
+}
+
+.containerLarge {
+    flex: calc(62% + 32px);
+    min-width: 300px;
+    height: calc((((100vh - 128px) / 3) * 2) + 32px);
+}
+
+.containerMedium {
+    flex: 31%;
+    min-width: 300px;
+    height: calc((((100vh - 128px) / 3) * 2) + 32px);
+}
