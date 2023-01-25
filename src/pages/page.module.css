@@ -33,3 +33,9 @@
     min-width: 300px;
     height: calc((((100vh - 128px) / 3) * 2) + 32px);
 }
+
+.containerHuge {
+    flex: 93%;
+    min-width: 300px;
+    height: calc(100vh - 64px);
+}
