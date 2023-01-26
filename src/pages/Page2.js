@@ -21,8 +21,8 @@ const Page2 = () => {
                     containerProps={{ style: { height: "100%" } }}
                 />
             </Card>
-            {options.slice(2).map((option) =>
-                <Card className={styles.container}>
+            {options.slice(2).map((option, index) =>
+                <Card key={index} className={styles.container}>
                     <HighchartsReact 
                         highcharts={Highcharts} 
                         options={option}

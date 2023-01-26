@@ -7,8 +7,8 @@ import HighchartsReact from 'highcharts-react-official';
 const Page1 = () => {
     return (
         <div className={styles.page}>
-            {options.slice(0,3).map((option) =>
-                <Card className={styles.container}>
+            {options.slice(0,3).map((option, index) =>
+                <Card key={index.toString()} className={styles.container}>
                     <HighchartsReact 
                         highcharts={Highcharts} 
                         options={option}
