@@ -16,18 +16,22 @@ const getRagDataArray = (dataArray) => {
 
 const options = [
     {
-        colors: ['#FFD700', '#C0C0C0', '#CD7F32'],
         chart: {
           type: 'column',
           inverted: true,
           polar: true
         },
         title: {
-          text: 'Winter Olympic medals per existing country (TOP 5)',
+          text: 'Your Scores',
           align: 'left'
         },
+        subtitle: {
+            text: "We've collated your scores from the survey",
+            align: 'left'
+        },
         tooltip: {
-          outside: true
+          outside: true,
+          valueSuffix: '%'
         },
         pane: {
           size: '85%',
@@ -48,12 +52,13 @@ const options = [
           },
           lineWidth: 0,
           categories: [
-            'Norway',
-            'United States',
-            'Germany',
-            'Austria',
-            'Canada'
-          ]
+            'Managing Workload', 
+            'Psychological Safety at Work', 
+            'Work Life Balance', 'Social Interaction at Work', 
+            'Organisational Support', 
+            'Career Development', 
+            'Extenal Factors'
+            ]
         },
         yAxis: {
           crosshair: {
@@ -61,7 +66,7 @@ const options = [
             color: '#333'
           },
           lineWidth: 0,
-          tickInterval: 25,
+          tickInterval: 10,
           reversedStacks: false,
           endOnTick: true,
           showLastLabel: true
@@ -75,15 +80,12 @@ const options = [
           }
         },
         series: [{
-          name: 'Gold medals',
-          data: [148, 113, 104, 71, 77]
-        }, {
-          name: 'Silver medals',
-          data: [113, 122, 98, 88, 72]
-        }, {
-          name: 'Bronze medals',
-          data: [124, 95, 65, 91, 76]
-        }]
+          name: 'Your Score',
+          data: getRagDataArray(userScores)
+        }],
+        legend: {
+            enabled: false
+        }
       }
 ]
 

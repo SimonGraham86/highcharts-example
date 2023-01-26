@@ -24,7 +24,14 @@ const options = [
             align: 'left'
         },
         xAxis: {
-            categories: ['Managing Workload', 'Psychological Safety at Work', 'Work Life Balance', 'Social Interaction at Work', 'Organisational Support', 'Career Development', 'Extenal Factors'],
+            categories: [
+                'Managing Workload', 
+                'Psychological Safety at Work', 
+                'Work Life Balance', 'Social Interaction at Work', 
+                'Organisational Support', 
+                'Career Development', 
+                'Extenal Factors'
+                ],
             title: {
                 text: null
             }
