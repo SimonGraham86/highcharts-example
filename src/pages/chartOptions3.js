@@ -11,7 +11,6 @@ const getRagDataArray = (dataArray) => {
             dataArrayWithColors.push({"y":score, "color":"red"})
         } 
     })
-    console.log(dataArrayWithColors)
     return dataArrayWithColors;
 }
 
